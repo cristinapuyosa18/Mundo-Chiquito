@@ -47,6 +47,8 @@ fun imprimir(triple: Triple<CartaMostro, CartaMostro, CartaMostro>){
 fun main(args: Array<String>){
     var lineas = File(args[0]).readLines().drop(1)
     val mazo = mutableListOf<CartaMostro>()
+
+
             lineas.forEach { line ->
                 val carta = line.split(",")
                 val nombre = carta[0]
@@ -55,7 +57,7 @@ fun main(args: Array<String>){
                 val poder = carta[3].toInt()
                 val cartaMostro = CartaMostro(nombre, nivel, poder, atributo)
                 mazo.add(cartaMostro)
-    }
+
     val grafo = grafoMundoChiquito(mazo)
     val resultado = mundoChiquito(grafo)
     for (triple in resultado){
