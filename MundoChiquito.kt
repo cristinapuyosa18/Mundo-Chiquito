@@ -1,7 +1,6 @@
 package proyecto2
 import java.util.*
-import java.io.PrintWriter
-
+import java.io.File
 
 fun grafoMundoChiquito(mazo: MutableList<CartaMostro>): Grafo<CartaMostro>{
     val grafo: Grafo<CartaMostro> = ListasAdyacenciaGrafo<CartaMostro>()
@@ -45,24 +44,18 @@ fun imprimir(triple: Triple<CartaMostro, CartaMostro, CartaMostro>){
     println("(${triple.first.getNombre()} ${triple.second.getNombre()} ${triple.third.getNombre()})")
 }
 
-fun main(){
- 
-    val input = System.`in`
-    var reader = input.bufferedReader().readLine()
+fun main(args: Array<String>){
+    var lineas = File(args[0]).readLines().drop(1)
     val mazo = mutableListOf<CartaMostro>()
-    var i = 0
-    while(reader != null || i <= 60){
-        val carta = reader.split(",")
-        val nombre = carta[0]
-        val nivel = carta[1].toInt()
-        val poder = carta[2].toInt()
-        val atributo = carta[3]
-        val cartaMostro = CartaMostro(nombre, nivel, poder, atributo)
-        mazo.add(cartaMostro)
-        reader = input.bufferedReader().readLine()
-        i++
+            lineas.forEach { line ->
+                val carta = line.split(",")
+                val nombre = carta[0]
+                val nivel = carta[1].toInt()
+                val atributo = carta[2]
+                val poder = carta[3].toInt()
+                val cartaMostro = CartaMostro(nombre, nivel, poder, atributo)
+                mazo.add(cartaMostro)
     }
-
     val grafo = grafoMundoChiquito(mazo)
     val resultado = mundoChiquito(grafo)
     for (triple in resultado){

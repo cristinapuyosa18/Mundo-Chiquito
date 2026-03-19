@@ -15,4 +15,7 @@ class CartaMostro(private var nombre: String, private var nivel: Int, private va
     fun getPoder() = poder
     fun getAtributo() = atributo
      
+    override fun toString(): String {
+        return "$nombre: nivel: $nivel, poder: $poder, atributo: $atributo \n"
+    }
 }               
