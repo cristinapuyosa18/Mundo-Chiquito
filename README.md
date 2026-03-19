@@ -23,6 +23,6 @@ Utilizamos dicho grafo para la generación de tripletas. El proceso consistió e
 | Función | Input | Output | Complejidad | Estructura de Datos |
 | :--- | :--- | :--- | :--- | :--- |
 | **grafoMundoChiquito** | `MutableList<CartaMostro>` | `Grafo<CartaMostro>` | O(V^2) | **Listas de Adyacencia:** Representa el grafo $G=(V, E)$. |
-| **mundoChiquito** | `Grafo<CartaMostro>` | `Set<Triple<...>>` | O(V \cdot D^2) (Donde D es el grado mayor del rafo) | **MutableSet / Triple:** Almacena combinaciones únicas (ternas). |
+| **mundoChiquito** | `Grafo<CartaMostro>` | `Set<Triple<...>>` | O($V \cdot D^2$) (Donde D es el grado mayor del rafo) | **MutableSet / Triple:** Almacena combinaciones únicas (ternas). |
 | **imprimir** | `Triple<CartaMostro, ...>` | | O(1) | **String:** Formatea y muestra los nombres de las cartas. |
 | **main** | `System.in` |  | O(V) | **MutableList:** Almacena las cartas leídas de `deck.csv`. |
