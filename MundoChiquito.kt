@@ -51,7 +51,7 @@ fun main(){
     var reader = input.bufferedReader().readLine()
     val mazo = mutableListOf<CartaMostro>()
     var i = 0
-    while(reader != null || i <= 60){
+    while(reader != null && i <= 60){
         val carta = reader.split(",")
         val nombre = carta[0]
         val nivel = carta[1].toInt()
