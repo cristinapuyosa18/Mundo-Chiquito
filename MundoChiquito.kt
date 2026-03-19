@@ -15,7 +15,10 @@ fun grafoMundoChiquito(mazo: MutableList<CartaMostro>): Grafo<CartaMostro>{
             if(carta1.getNombre() == carta2.getNombre()){
                 throw IllegalArgumentException("No se pueden agregar cartas con el mismo nombre al grafo")
             }
-            if ((carta1.getNivel() == carta2.getNivel()) || (carta1.getPoder() == carta2.getPoder()) || (carta1.getAtributo() == carta2.getAtributo())) {
+            if (
+            (carta1.getNivel() == carta2.getNivel() && carta1.getPoder() != carta2.getPoder() && carta1.getAtributo() != carta2.getAtributo()) || 
+            (carta1.getNivel() != carta2.getNivel() && carta1.getPoder() == carta2.getPoder() && carta1.getAtributo() != carta2.getAtributo()) || 
+            (carta1.getNivel() != carta2.getNivel() && carta1.getPoder() != carta2.getPoder() && carta1.getAtributo() == carta2.getAtributo())) {
                 grafo.conectar(carta1, carta2)
             }
         }
