@@ -46,14 +46,14 @@ Función principal que procesa el archivo csv y en donde se ejecuta todas las fu
 
 ## Otros archivos:
 
-# cartaMostro.kt:
+### cartaMostro.kt:
 
 Contiene la clase cartaMostro.
 
-# ListaAdyacenciaGrafo.kt
+### ListaAdyacenciaGrafo.kt:
 
 Contiene la implementación de grafo utilizando listas de adyacencia.
 
-# Grafo.kt
+### Grafo.kt:
 
 Contiene la interfaz del TAD Grafo.
