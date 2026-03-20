@@ -30,7 +30,7 @@ Utilizamos dicho grafo para la generación de tripletas. El proceso consistió e
 
 ### grafoMundoChiquito:
 
-Recibe una lista de intancias de la clase cartaMostro y genera un grafo utilizando la implementación de listas de adyacencia cuyos vertices están conectado si y sólo si comparten exáctamente un atributo
+Recibe una lista de intancias de la clase cartaMostro y genera un grafo utilizando la implementación de listas de adyacencia cuyos vertices están conectado si y sólo si comparten exáctamente un atributo. Además verifica que ninguna instancia de cartaMostro tenga el mismo nombre que otra.
 
 ### mundoChiquito:
 
@@ -48,7 +48,7 @@ Función principal que procesa el archivo csv y en donde se ejecuta todas las fu
 
 ### cartaMostro.kt:
 
-Contiene la clase cartaMostro.
+Contiene la clase cartaMostro. Cada instancia contiene el nombre(String), poder (Int), nivel (Int), atributo (String). Al momento de crear un nuevo objecto cartaMostro se verifica que el nivel esté en el rango establacido (1-12), que el poder sea múltiplo de 50 y que el atributo sea uno de los ya preestablecidos.
 
 ### ListaAdyacenciaGrafo.kt:
 
