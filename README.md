@@ -26,11 +26,11 @@ Utilizamos dicho grafo para la generación de tripletas. El proceso consistió e
 | **imprimir**           | `Triple<CartaMostro, ...>` |                      | O(1)                                                  | **String:** Formatea y muestra los nombres de las cartas.        |
 | **main**               | `System.in`                |                      | O(V)                                                  | **MutableList:** Almacena las cartas leídas de `deck.csv`.       |
 
+## Descripción de funciones de MundoChiquito.kt
+
 ### grafoMundoChiquito:
 
 Recibe una lista de intancias de la clase cartaMostro y genera un grafo utilizando la implementación de listas de adyacencia cuyos vertices están conectado si y sólo si comparten exáctamente un atributo
-
-## Descripción de funciones de MundoChiquito.kt
 
 ### mundoChiquito:
 
