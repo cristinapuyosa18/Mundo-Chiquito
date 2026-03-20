@@ -30,14 +30,30 @@ Utilizamos dicho grafo para la generación de tripletas. El proceso consistió e
 
 Recibe una lista de intancias de la clase cartaMostro y genera un grafo utilizando la implementación de listas de adyacencia cuyos vertices están conectado si y sólo si comparten exáctamente un atributo
 
+## Descripción de funciones de MundoChiquito.kt
+
 ### mundoChiquito:
 
-Recibe un grafo no dirigido y devuelve las tripletas que satisfacen las condiciones de Mundo Chiquito
+Recibe un grafo no dirigido y devuelve las tripletas que satisfacen las condiciones de Mundo Chiquito.
 
 ### imprimir:
 
-Recibe una tripleta cuyas coordenadas son instancia de la clase cartaMostro, la formatea e imprime la tripleta en la salida estándar
+Recibe una tripleta cuyas coordenadas son instancia de la clase cartaMostro, la formatea e imprime la tripleta en la salida estándar.
 
 ### main:
 
 Función principal que procesa el archivo csv y en donde se ejecuta todas las funciones anteriores.
+
+## Otros archivos:
+
+# cartaMostro.kt:
+
+Contiene la clase cartaMostro.
+
+# ListaAdyacenciaGrafo.kt
+
+Contiene la implementación de grafo utilizando listas de adyacencia.
+
+# Grafo.kt
+
+Contiene la interfaz del TAD Grafo.
