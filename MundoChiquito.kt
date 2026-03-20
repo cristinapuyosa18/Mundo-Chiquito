@@ -57,7 +57,7 @@ fun main(args: Array<String>){
                 val poder = carta[3].toInt()
                 val cartaMostro = CartaMostro(nombre, nivel, poder, atributo)
                 mazo.add(cartaMostro)
-
+            }
     val grafo = grafoMundoChiquito(mazo)
     val resultado = mundoChiquito(grafo)
     for (triple in resultado){

@@ -25,3 +25,19 @@ Utilizamos dicho grafo para la generación de tripletas. El proceso consistió e
 | **mundoChiquito**      | `Grafo<CartaMostro>`       | `Set<Triple<...>>`   | O($V \cdot D^2$) (Donde D es el grado mayor del rafo) | **MutableSet / Triple:** Almacena combinaciones únicas (ternas). |
 | **imprimir**           | `Triple<CartaMostro, ...>` |                      | O(1)                                                  | **String:** Formatea y muestra los nombres de las cartas.        |
 | **main**               | `System.in`                |                      | O(V)                                                  | **MutableList:** Almacena las cartas leídas de `deck.csv`.       |
+
+### grafoMundoChiquito:
+
+Recibe una lista de intancias de la clase cartaMostro y genera un grafo utilizando la implementación de listas de adyacencia cuyos vertices están conectado si y sólo si comparten exáctamente un atributo
+
+### mundoChiquito:
+
+Recibe un grafo no dirigido y devuelve las tripletas que satisfacen las condiciones de Mundo Chiquito
+
+### imprimir:
+
+Recibe una tripleta cuyas coordenadas son instancia de la clase cartaMostro, la formatea e imprime la tripleta en la salida estándar
+
+### main:
+
+Función principal que procesa el archivo csv y en donde se ejecuta todas las funciones anteriores.
